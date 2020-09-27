@@ -1,0 +1,7 @@
+category 1 - * courses
+
+trainer 1 - * courses
+
+student * - * courses
+
+courses: 2 forign key from category and trainer
