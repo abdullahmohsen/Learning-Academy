@@ -47,8 +47,8 @@
                             </li>
                             <li>
                                 <a class="justify-content-between d-flex" href="#">
-                                    <p>Course Fee </p>
-                                    <span>${{ $course->price }}</span>
+                                    <p>Course Price </p>
+                                    <span>{{ $course->price }} EGP</span>
                                 </a>
                             </li>
                         </ul>

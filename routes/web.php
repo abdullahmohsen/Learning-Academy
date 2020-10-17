@@ -1,14 +1,15 @@
 <?php
 
-use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\Front;
 use App\Http\Controllers\Admin;
+use App\Http\Controllers\Front;
+use Illuminate\Support\Facades\Route;
 
 // Route::get('/', 'Front\HomepageController@index')->name('front.homepage');
 Route::get('/', [Front\HomepageController::class, 'index'])->name('front.homepage');
 // Route::get('/', function () {
 //     return view('front.index');
 // });
+
 
 Route::get('/cat/{id}', [Front\CourseController::class, 'cat'])->name('front.cat');
 Route::get('/cat/{id}/course/{c_Id}', [Front\CourseController::class, 'show'])->name('front.show');

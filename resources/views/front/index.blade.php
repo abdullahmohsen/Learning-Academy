@@ -2,7 +2,7 @@
 
 @section('content')
 
-<button id="btnup" class="btn btn_1" style="padding: 7.5px 22px" type="button"><i class="ti-angle-up"></i></button>
+<button id="btnup" class="btn btn_1 z_index" style="padding: 7.5px 22px" type="button"><i class="ti-angle-up"></i></button>
 {{--  <button id="btnup" class="btn btn-dark" type="button"><i class="fas fa-arrow-up fa-1x"></i></button>  --}}
 
     <!-- banner part start-->
@@ -143,7 +143,7 @@
                             <img src="{{ asset('uploads/courses/'. $c->img) }}" class="special_img" alt="">
                             <div class="special_cource_text">
                                 <a href="{{ route('front.cat', $c->cat->id) }}" class="btn_4">{{ $c->cat->name }}</a>
-                                <h4>${{ $c->price }}</h4>
+                                <h4>{{ $c->price }} EGP</h4>
                                 <a href="{{ route('front.show', [$c->cat->id, $c->id]) }}"> <h3>{{ $c->name }}</h3></a>
                                 <p>{{ $c->small_desc }}</p>
                                 <div class="author_info">
